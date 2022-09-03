@@ -1,0 +1,9 @@
+{%exteres "admin/base.html" %}
+
+{% block litle %}{% subtitle %}{{ subtitle }} | {% endif %}{{ litle }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Pedro Site</a></h1>
+ {% endblock %}
+
+ {% block nav-global %}{% endblock %}
